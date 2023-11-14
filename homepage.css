@@ -1,26 +1,28 @@
-body{
-  background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/HighresScreenshot00001-1920x1080-e0aacba01b4c45d5cbc9899707974c1c.jpg?resize=1&w=1920);
+body {
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)), url(https://cdn1.epicgames.com/ue/product/Screenshot/HighresScreenshot00001-1920x1080-e0aacba01b4c45d5cbc9899707974c1c.jpg?resize=1&w=1920);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
-h1{
+h1 {
   font-family: Verdana;
   text-align: center;
   margin-top: 10px;
 }
-.navbar {
-   font-weight: 700;
-}
-
-h2{
-font-family: Verdana;
-margin-top: 50px;
-}
-
 p{
-  font-family: Helvetica;
+  font-weight: 700;
+text-transform: capitalize;
 }
+.navbar {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Verdana;
+  margin-top: 50px;
+}
+
