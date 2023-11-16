@@ -547,9 +547,9 @@ selectMountainEl.onchange = function(){
 
  
   mountainInfoDiv.innerHTML = `<h2>${selectedMountain.name}</h2>
-  <p>Elevation: ${selectedMountain.elevation} feet</p>
-  <p>Effort: ${selectedMountain.effort}</p>
+  <p><strong>Elevation:</strong> ${selectedMountain.elevation} feet</p>
+  <p><strong>Effort:</strong> ${selectedMountain.effort}</p>
   <img src="${selectedMountain.img}" alt="${selectedMountain.name}" class="img-fluid mb-3">
-  <p>Description: ${selectedMountain.desc}</p>
-  <p>Coordinates: Latitude ${selectedMountain.coords.lat}, Longitude ${selectedMountain.coords.lng}</p>`;
+  <p><strong>Description:</strong> ${selectedMountain.desc}</p>
+  <p><strong>Coordinates:</strong> Latitude ${selectedMountain.coords.lat}, Longitude ${selectedMountain.coords.lng}</p>`;
 }
