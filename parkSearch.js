@@ -5930,22 +5930,28 @@ function searchParks() {
     return;
   }
 
-  // Function is called when the button is clicked and it gets the selected Location or Park type then does a search on the national park array 
-  const results = [];
-  for (let i = 0; i < nationalParksArray.length; i++) {
-    const park = nationalParksArray[i];
-    const matchesLocation =
-      location === "" || park.State.toLowerCase() === location.toLowerCase();
+ //  Empty Array will store the parks selected
+ const results = [];
 
-    const matchesParkType = park.LocationName.toLowerCase().includes(parkType);
+ //Goes through the each national park but it is now assign to park variable
+ for (let i = 0; i < nationalParksArray.length; i++) {
+   const park = nationalParksArray[i];
 
-    if (matchesLocation && matchesParkType) {
-      results.push(park);
-    }
-  }
+   // checks if the location is empty or if the park's state matches the location it is now in matchesLocation
+   const matchesLocation =
+     location === "" || park.State.toLowerCase() === location.toLowerCase();
 
-  // The results of the parks is within the results and also calls displayResults function to show the results
-  displayResults(results);
+   //This line checks if the park's location name includes the specified parkType. The result is stored in the matchesParkType variable.
+   const matchesParkType = park.LocationName.toLowerCase().includes(parkType);
+
+   //This if statement checks if both conditions (matchesLocation and matchesParkType) are true. It is added to the results array using results.push(park).
+   if (matchesLocation && matchesParkType) {
+     results.push(park);
+   }
+ }
+
+ // The results of the parks is within the results and also calls displayResults function to show the results
+ displayResults(results);
 }
 
 // The function diplays the message for what you choose and click search

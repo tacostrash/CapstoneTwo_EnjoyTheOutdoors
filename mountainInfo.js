@@ -532,14 +532,26 @@ const mountainsArray = [
 const selectMountainEl = document.getElementById("selectMountain");
  const mountainInfoDiv = document.getElementById("mountainInfo");
 
+//It gos through each mountain
 for(let i=0; i < mountainsArray.length; i++){
-  const mountain = mountainsArray[i];
-  const option = document.createElement("option");
-  option.value = mountain.name;
-  option.text = mountain.name;
-  selectMountainEl.add(option);
-}
 
+  //For each mountain, it creates a new <option> HTML element using document.createElement("option"). This element will be used to create the dropdown.
+ const mountain = mountainsArray[i];
+ const option = document.createElement("option");
+ 
+  //This sets the value and the text of the <option> element to the name of the current mountain.
+ option.value = mountain.name;
+ option.text = mountain.name;
+ 
+ //It adds the created <option> element to the <select> dropdown (selectMountainEl).
+ selectMountainEl.add(option);
+ }
+
+
+ /*when the user changes the selected option in the dropdown, the code gets the name of the selected mountain from the dropdown's value,
+ and then it gets the mountainsArray for a mountain with that name. The found mountain is stored in the selectedMountain variable, 
+ then it displays for that specific mountain*/
+ 
 selectMountainEl.onchange = function(){
 
   const selectedMountainName = selectMountainEl.value;
