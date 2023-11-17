@@ -8,8 +8,7 @@ These pages both have information for the user for what they are searching for.
 
 
 ## Demo for the Homepage, Mountain Page and National Park Search Page
-
-
+![This Gif shows the demos for each page](https://raw.githubusercontent.com/tacostrash/CapstoneTwo_EnjoyTheOutdoors/main/Captone2.gif)
 ## Authors
 
 - [@tacostrash](https://www.github.com/tacostrash)
