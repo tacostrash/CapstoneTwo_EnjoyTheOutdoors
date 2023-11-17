@@ -90,7 +90,9 @@ selectMountainEl.add(option);
 
 ```JS
 
-// when the user changes the selected option in the dropdown, the code gets the name of the selected mountain from the dropdown's value, and then it gets the mountainsArray for a mountain with that name. The found mountain is stored in the selectedMountain variable, then it displays for that specific mountain
+/*when the user changes the selected option in the dropdown, the code gets the name of the selected mountain from the dropdown's value,
+ and then it gets the mountainsArray for a mountain with that name. The found mountain is stored in the selectedMountain variable, 
+ then it displays for that specific mountain*/
 
 
 SelectMountainEl.onchange = function(){
