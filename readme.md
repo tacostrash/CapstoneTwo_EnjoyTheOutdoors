@@ -6,6 +6,13 @@ This project is a website that starts at the homepage and has two pages
 2. The link on the right is the Mountain Information page
    These pages both have information for the user for what they are searching for.
 
+## Requirements for the project
+Homepage - Page should highlight our simple organization and contain link to two pages: a National Parks search page and a Mountains Information page!
+
+National Parks Search Page - The National Parks search page provides a user interface that allows the user to search for the park that is just right for them. Data comes fro a file name nationalParks.js provided
+
+Mountains Information Page - The mountains information page provides a user interface that allows the user to explore the details of 48 different mountains. Data will come from a file named mountains.js provided
+
 ## Demo for the Homepage, Mountain Page and National Park Search Page
 
 ![This Gif shows the demos for each page](https://github.com/tacostrash/CapstoneTwo_EnjoyTheOutdoors/blob/main/Capstone2.gif?raw=true)
