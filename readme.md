@@ -40,6 +40,30 @@ if (!location && !parkType){
  return;
 }
 
+//  Empty Array will store the parks selected
+  const results = [];
+
+  //Goes through the each national park but it is now assign to park variable
+  for (let i = 0; i < nationalParksArray.length; i++) {
+    const park = nationalParksArray[i];
+
+    // checks if the location is empty or if the park's state matches the location it is now in matchesLocation
+    const matchesLocation =
+      location === "" || park.State.toLowerCase() === location.toLowerCase();
+
+    //This line checks if the park's location name includes the specified parkType. The result is stored in the matchesParkType variable.
+    const matchesParkType = park.LocationName.toLowerCase().includes(parkType);
+
+    //This if statement checks if both conditions (matchesLocation and matchesParkType) are true. It is added to the results array using results.push(park).
+    if (matchesLocation && matchesParkType) {
+      results.push(park);
+    }
+  }
+
+  // The results of the parks is within the results and also calls displayResults function to show the results
+  displayResults(results);
+}
+
 ```
 
 ## Mountain Array Code
@@ -65,7 +89,8 @@ selectMountainEl.add(option);
 ## Finding and Displaying the Mountain 
 
 ```JS
-// when the user changes the selected option in the dropdown, the code gets the name of the selected mountain from the dropdown's value, and then it gets the mountainsArray for a mountain with that name. The found mountain is stored in the selectedMountain variable, then it displays for that specific 
+
+// when the user changes the selected option in the dropdown, the code gets the name of the selected mountain from the dropdown's value, and then it gets the mountainsArray for a mountain with that name. The found mountain is stored in the selectedMountain variable, then it displays for that specific mountain
 
 
 SelectMountainEl.onchange = function(){

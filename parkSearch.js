@@ -5955,7 +5955,7 @@ function displayResults(results){
   resultsBox.innerHTML = "";
 
   if (results.length === 0){
-    resultsBox.innerHTML = "<p>No results found.</p>";
+    resultsBox.innerHTML = "<p> Please select at least one: location or park type.</p> ";
   } else {
     for (let i = 0; i < results.length; i++){
       const park = results[i];
